@@ -59,6 +59,8 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { PlasmicHead } from "@plasmicapp/react-web";
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: pbWGRbLGmgN9JjCUc1irxE/projectcss
@@ -77,6 +79,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
+  pageMetadataOverride?: Flex__<typeof PlasmicHead>;
   header?: Flex__<"div">;
   hero?: Flex__<"section">;
   columns?: Flex__<"div">;
@@ -140,6 +143,17 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <PlasmicHead
+            data-plasmic-name={"pageMetadataOverride"}
+            data-plasmic-override={overrides.pageMetadataOverride}
+            className={classNames("__wab_instance", sty.pageMetadataOverride)}
+            description={"Unleashing the Dark Side of Crypto"}
+            image={
+              "/plasmic/solatan/images/whatsAppImage20240621At74131PMjpeg.jpg"
+            }
+            title={"SOLATAN"}
+          />
+
           <div
             data-plasmic-name={"header"}
             data-plasmic-override={overrides.header}
@@ -381,7 +395,16 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "hero", "columns", "h4", "text"],
+  root: [
+    "root",
+    "pageMetadataOverride",
+    "header",
+    "hero",
+    "columns",
+    "h4",
+    "text"
+  ],
+  pageMetadataOverride: ["pageMetadataOverride"],
   header: ["header"],
   hero: ["hero", "columns", "h4", "text"],
   columns: ["columns", "h4", "text"],
@@ -393,6 +416,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  pageMetadataOverride: typeof PlasmicHead;
   header: "div";
   hero: "section";
   columns: "div";
@@ -460,6 +484,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     header: makeNodeComponent("header"),
     hero: makeNodeComponent("hero"),
     columns: makeNodeComponent("columns"),
