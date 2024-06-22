@@ -199,6 +199,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.link__pkKYy
                 )}
                 component={Link}
+                href={
+                  "https://pump.fun/6Pkwtv3JcFjKFhEwrR3BFiLs3v5Xkj3B3qhjXyEtpump"
+                }
                 platform={"nextjs"}
               >
                 <PlasmicImg__
