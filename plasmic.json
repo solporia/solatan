@@ -1,0 +1,140 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "pbWGRbLGmgN9JjCUc1irxE",
+      "projectApiToken": "MPjr1oevEdsBHx3nFjtphuDRPCcFkoNhySDgiV7c7LMsh7k8yJ1seC5BI6W8zH1btYNRdggvjRQFK9LUcOA",
+      "projectName": "solatan",
+      "version": "latest",
+      "cssFilePath": "plasmic/solatan/plasmic.module.css",
+      "components": [
+        {
+          "id": "NLXzngHH1crz",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "pbWGRbLGmgN9JjCUc1irxE",
+          "renderModuleFilePath": "plasmic/solatan/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/solatan/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        },
+        {
+          "id": "mhmwD0DOLyew",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "pbWGRbLGmgN9JjCUc1irxE",
+          "renderModuleFilePath": "plasmic/solatan/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/solatan/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        }
+      ],
+      "icons": [
+        {
+          "id": "DhvpZ9RV66x0",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/solatan/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "k6o0nvn_n3L-",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/solatan/icons/PlasmicIcon__Icon.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "jP2k5pHAfRE2",
+          "name": "WhatsApp Image 2024-06-21 at 7.41.31 PM.jpeg",
+          "filePath": "../public/plasmic/solatan/images/whatsAppImage20240621At74131PMjpeg.jpg"
+        },
+        {
+          "id": "vmlff-iEFto2",
+          "name": "WhatsApp GIF 2024-06-21 at 7.41.31 PM.gif",
+          "filePath": "../public/plasmic/solatan/images/whatsAppGif20240621At74131PMgif.gif"
+        },
+        {
+          "id": "VbNONEVTikpZ",
+          "name": "iWhatsApp_Image_2024-06-21_at_7.41.32_PM-removebg-preview.png",
+          "filePath": "../public/plasmic/solatan/images/iWhatsAppImage20240621At74132PmRemovebgPreviewpng.png"
+        },
+        {
+          "id": "miA3HIuYtsCa",
+          "name": "icon-pumpfun.png",
+          "filePath": "../public/plasmic/solatan/images/iconPumpfunpng.png"
+        },
+        {
+          "id": "duvxJiNVPt8C",
+          "name": "twitter-x-logo-0339F999CF-seeklogo.com.png",
+          "filePath": "../public/plasmic/solatan/images/twitterXLogo0339F999CfSeeklogocompng.png"
+        },
+        {
+          "id": "e7WLwEetltBi",
+          "name": "Telegram_alternative_logo.svg.png",
+          "filePath": "../public/plasmic/solatan/images/telegramAlternativeLogosvgpng.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "ZE9h4yEVl440",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "2syChS4gWjG3",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "Rec9162bBxqb",
+        "name": "Screen",
+        "projectId": "pbWGRbLGmgN9JjCUc1irxE",
+        "contextFilePath": "plasmic/solatan/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.330",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.330/dist/plasmic.schema.json"
+}
