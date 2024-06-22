@@ -226,6 +226,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.link__fu8GF
                 )}
                 component={Link}
+                href={"https://x.com/Solatan6969"}
                 platform={"nextjs"}
               >
                 <PlasmicImg__
@@ -253,6 +254,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.link__cGiXf
                 )}
                 component={Link}
+                href={"https://t.me/Solatan69"}
                 platform={"nextjs"}
               >
                 <PlasmicImg__
@@ -318,7 +320,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.h4
                   )}
                 >
-                  {"Unleashing the Dark Side of Crypto"}
+                  {
+                    "the devil that started shitcoins.\nIt was known that with endless greed, misfortune arises.\nBut that\u2019s not the case for $Solatan, the more greed, the more good things will come his way."
+                  }
                 </h4>
                 <PlasmicLink__
                   className={classNames(
