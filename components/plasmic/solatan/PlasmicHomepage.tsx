@@ -334,7 +334,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.link__pxJs8
                   )}
                   component={Link}
-                  href={"https://www.plasmic.app/"}
+                  href={
+                    "https://pump.fun/6Pkwtv3JcFjKFhEwrR3BFiLs3v5Xkj3B3qhjXyEtpump"
+                  }
                   platform={"nextjs"}
                 >
                   <Stack__
